@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { FaGithub } from "react-icons/fa6";
 // import { Link } from 'react-router-dom'
 
 export default function Navbar(props) {
@@ -12,13 +13,18 @@ export default function Navbar(props) {
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
         <li className="nav-item">
           <a className="nav-link active" href="#">Home</a>
         </li>
-        {/* <li className="nav-item">
-          <Link className="nav-link" to="/about">{props.aboutText}</Link>
-        </li> */}
+        
+        <li className="nav-item btn btn-dark text-white ms-2">
+
+        <a href="https://github.com/namankoolwal/TextUtil/" className="d-flex text-decoration-none text-white align-items-center">
+        <FaGithub className='fs-5 me-2' />
+              Give a Star
+            </a>
+        </li>
       </ul>
       <div className="d-flex">
         <div className="bg-primary rounded mx-2" style={{height:'30px', width:"30px", cursor:"pointer"}} onClick={()=>{props.toggleMode('primary')}}></div>

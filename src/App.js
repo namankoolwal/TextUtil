@@ -1,5 +1,6 @@
 import './App.css';
 import { Alert } from './components/Alert';
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 // import { About } from './components/About';
 import { TextForms } from './components/TextForms';
@@ -69,6 +70,7 @@ function App() {
             {/* <Route exact path="/about" element={<About mode={mode} />} /> */}
         {/* </Routes> */}
       {/* </BrowserRouter> */}
+      <Footer  mode={mode}/>
     </>
   );
 }
